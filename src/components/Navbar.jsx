@@ -60,18 +60,12 @@ export default function Navbar({ onOpenInquiry }) {
             
             {/* School Crest & Identity */}
             <Link to="/" className="flex items-center gap-3 sm:gap-4 group flex-shrink-0">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-br from-navy-900 via-navy-800 to-navy-950 p-2.5 shadow-md flex items-center justify-center text-amber-400 group-hover:scale-105 transition-transform duration-300 border border-amber-500/30 flex-shrink-0">
-                <svg viewBox="0 0 40 40" className="w-full h-full fill-current">
-                  <path d="M20 3L4 11L20 19L36 11L20 3Z" fill="url(#goldGradNav)" />
-                  <path d="M9 16.5V26.5C9 31.5 20 37 20 37C20 37 31 31.5 31 26.5V16.5L20 22L9 16.5Z" fill="currentColor" opacity="0.9" />
-                  <path d="M20 25.5L14 22.5V26.5C14 29.5 20 33 20 33C20 33 26 29.5 26 26.5V22.5L20 25.5Z" fill="#ffffff" opacity="0.8" />
-                  <defs>
-                    <linearGradient id="goldGradNav" x1="4" y1="3" x2="36" y2="19" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#F59E0B" />
-                      <stop offset="1" stopColor="#D97706" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden shadow-md border-2 border-amber-500/80 bg-white p-0.5 group-hover:scale-105 transition-transform duration-300 flex-shrink-0">
+                <img
+                  src="/images/school-logo.png"
+                  alt="Scholars World School Logo"
+                  className="w-full h-full object-contain rounded-full"
+                />
               </div>
 
               <div className="flex flex-col">
@@ -81,8 +75,12 @@ export default function Navbar({ onOpenInquiry }) {
                 <span className="text-xs sm:text-sm font-serif italic text-amber-700 tracking-wide mt-1 flex flex-wrap items-center gap-1.5">
                   <span>The Perfect Beginning</span>
                   <span className="not-italic text-slate-300">•</span>
+                  <span className="not-italic text-amber-800 font-medium text-[11px]">
+                    विद्याधनं सर्वधनप्रधानम्
+                  </span>
+                  <span className="not-italic text-slate-300">•</span>
                   <span className="not-italic font-sans text-slate-500 text-[11px] font-semibold uppercase tracking-wider">
-                    Jaipur (Gokulpura & Kalwar Road)
+                    Jaipur
                   </span>
                 </span>
               </div>

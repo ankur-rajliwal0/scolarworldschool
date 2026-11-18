@@ -112,9 +112,16 @@ export default function About({ onOpenInquiry }) {
             </div>
 
             <div className="lg:col-span-7 space-y-4">
-              <span className="text-xs font-bold uppercase tracking-wider text-amber-700">
-                Message from Leadership
-              </span>
+              <div className="flex items-center gap-2.5">
+                <img
+                  src="/images/school-logo.png"
+                  alt="Scholars World School Official Seal"
+                  className="w-9 h-9 rounded-full object-contain bg-white border border-amber-400/80 p-0.5 shadow-xs"
+                />
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-700">
+                  Leadership Desk • !! विद्याधनं सर्वधनप्रधानम् !!
+                </span>
+              </div>
               <h2 className="font-heading font-extrabold text-2xl sm:text-3xl text-navy-950">
                 "Every child is endowed with a unique spark waiting to be ignited."
               </h2>

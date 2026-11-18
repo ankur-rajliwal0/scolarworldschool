@@ -49,9 +49,13 @@ export default function Footer({ onOpenInquiry }) {
           
           {/* Col 1: School Identity & Overview (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 p-2 shadow-md flex items-center justify-center text-navy-950 font-black text-xl border border-amber-300">
-                SWS
+            <div className="flex items-center gap-3.5">
+              <div className="w-14 h-14 rounded-full overflow-hidden shadow-md bg-white p-0.5 border-2 border-amber-400 flex-shrink-0">
+                <img
+                  src="/images/school-logo.png"
+                  alt="Scholars World School Emblem"
+                  className="w-full h-full object-contain rounded-full"
+                />
               </div>
               <div>
                 <h4 className="font-heading font-extrabold text-lg text-white tracking-tight">
@@ -59,6 +63,9 @@ export default function Footer({ onOpenInquiry }) {
                 </h4>
                 <p className="text-xs font-serif italic text-amber-400">
                   The Perfect Beginning • Jaipur
+                </p>
+                <p className="text-[11px] text-amber-200/90 mt-0.5">
+                  !! विद्याधनं सर्वधनप्रधानम् !!
                 </p>
               </div>
             </div>

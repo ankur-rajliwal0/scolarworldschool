@@ -13,6 +13,8 @@ export const NEXT_YEAR = new Date().getFullYear() + 1;
 export const SCHOOL_INFO = {
   name: "Scholars World School",
   tagline: "The Perfect Beginning",
+  sanskritMotto: "विद्याधनं सर्वधनप्रधानम्",
+  logo: "/images/school-logo.png",
   affiliation: "Co-educational English Medium School • CBSE Curriculum Framework",
   type: "Day School & Day Boarding",
   currentSession: CURRENT_SESSION,
@@ -68,6 +70,11 @@ export const SCHOOL_INFO = {
 };
 
 export const REAL_CAMPUS_ASSETS = {
+  logo: {
+    src: "/images/school-logo.png",
+    title: "Official School Seal & Logo",
+    desc: "Sacred emblem featuring Lord Ganesha writing with a peacock quill, Sanskrit motto 'विद्याधनं सर्वधनप्रधानम्', and Co-education English Medium designation."
+  },
   facade: {
     src: "/images/building-facade.jpg",
     title: "Scholars World School Main Building",

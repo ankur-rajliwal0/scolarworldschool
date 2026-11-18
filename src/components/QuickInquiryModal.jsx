@@ -56,9 +56,13 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
       >
         {/* Header Ribbon */}
         <div className="bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 px-6 py-5 text-white flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30">
-              <Sparkles className="w-5 h-5 text-amber-400" />
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-full overflow-hidden bg-white p-0.5 border-2 border-amber-400 shadow-sm flex-shrink-0">
+              <img
+                src="/images/school-logo.png"
+                alt="Scholars World School Logo"
+                className="w-full h-full object-contain rounded-full"
+              />
             </div>
             <div>
               <h3 className="font-heading font-extrabold text-lg text-white">
