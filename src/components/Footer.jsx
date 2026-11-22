@@ -7,7 +7,7 @@ import { SCHOOL_INFO, CURRENT_SESSION } from '../data/schoolData';
 
 export default function Footer({ onOpenInquiry }) {
   return (
-    <footer className="bg-navy-950 text-slate-300 border-t border-navy-800">
+    <footer className="bg-navy-950 text-slate-300 border-t border-navy-800 w-full overflow-x-clip">
       
       {/* Pre-footer Callout Banner */}
       <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-navy-950 py-6 px-4">
@@ -20,7 +20,7 @@ export default function Footer({ onOpenInquiry }) {
               Give Your Child "The Perfect Beginning" Today
             </h3>
             <p className="text-sm font-medium text-navy-900/90 mt-0.5">
-              Day School & Full Day Boarding Available for Working Parents (PG to Class VIII)
+              Excellence in CBSE Education & Value-Based Foundation (PG to Class VIII)
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function Footer({ onOpenInquiry }) {
             </div>
 
             <p className="text-sm text-slate-300 leading-relaxed">
-              A premier Co-educational English Medium Day & Day Boarding institution delivering progressive CBSE-aligned education from Playgroup to Class VIII, with upcoming expansion to Class 10th.
+              A premier Co-educational English Medium institution delivering progressive CBSE-aligned education from Playgroup to Class VIII, with upcoming expansion to Class 10th.
             </p>
 
             <div className="pt-2 flex flex-col gap-2 text-xs">
@@ -80,8 +80,8 @@ export default function Footer({ onOpenInquiry }) {
                 <span>CBSE Curriculum Framework & NEP 2020 Aligned</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
-                <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span>Day Boarding Program with Meals till 5:30 PM</span>
+                <Sparkles className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <span>Smart Classrooms & Holistic Activity Arena</span>
               </div>
             </div>
 
@@ -153,13 +153,8 @@ export default function Footer({ onOpenInquiry }) {
                 </Link>
               </li>
               <li>
-                <Link to="/day-boarding" className="text-slate-300 hover:text-amber-400 transition-colors">
-                  Day Boarding Facility
-                </Link>
-              </li>
-              <li>
                 <Link to="/admissions" className="text-slate-300 hover:text-amber-400 transition-colors">
-                  Admissions 2026-27
+                  Admissions {CURRENT_SESSION}
                 </Link>
               </li>
               <li>
@@ -213,7 +208,7 @@ export default function Footer({ onOpenInquiry }) {
         {/* Bottom Bar: Copyright & Attribution */}
         <div className="mt-12 pt-6 border-t border-navy-800/80 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
           <p>
-            © {new Date().getFullYear()} <strong className="text-slate-200">Scholars World School</strong>. All Rights Reserved. Co-educational English Medium Day & Day Boarding School.
+            © {new Date().getFullYear()} <strong className="text-slate-200">Scholars World School</strong>. All Rights Reserved. Co-educational English Medium School.
           </p>
           <div className="flex items-center gap-4">
             <span className="text-slate-400">Gokulpura & Kalwar Road Branches, Jaipur</span>

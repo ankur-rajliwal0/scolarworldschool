@@ -8,7 +8,7 @@ export default function TopBanner({ onOpenInquiry }) {
   if (!visible) return null;
 
   return (
-    <div className="bg-navy-950 text-slate-200 text-xs border-b border-navy-800/80">
+    <div className="bg-navy-950 text-slate-200 text-xs border-b border-navy-800/80 w-full overflow-x-clip">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex flex-wrap items-center justify-between gap-y-2 gap-x-4">
           
@@ -19,7 +19,7 @@ export default function TopBanner({ onOpenInquiry }) {
               Admissions Open {CURRENT_SESSION}
             </span>
             <span className="hidden md:inline text-slate-300">
-              Classes PG to VIII • Day Boarding Available • Upgrading to Class 10th Soon!
+              Classes PG to VIII • CBSE Curriculum Framework • Upgrading to Class 10th Soon!
             </span>
           </div>
 

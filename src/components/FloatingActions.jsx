@@ -19,7 +19,7 @@ export default function FloatingActions({ onOpenInquiry }) {
 
   const openWhatsApp = () => {
     const msg = encodeURIComponent(
-      `Hello Scholars World School, Jaipur!\nI would like to inquire about Admission for Session ${CURRENT_SESSION} (PG to Class VIII / Day Boarding). Please share details.`
+      `Hello Scholars World School, Jaipur!\nI would like to inquire about Admission for Session ${CURRENT_SESSION} (PG to Class VIII). Please share details.`
     );
     window.open(`https://wa.me/919024467525?text=${msg}`, '_blank');
   };

@@ -10,7 +10,7 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
     email: '',
     grade: 'Playgroup (PG)',
     branch: 'gokulpura',
-    programType: 'Day Boarding (8 AM - 5:30 PM)',
+    visitTime: 'Morning (9:00 AM - 12:00 PM)',
     transport: 'Yes',
     notes: ''
   });
@@ -35,8 +35,8 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
       `• Student: ${formData.studentName}\n` +
       `• Grade: ${formData.grade}\n` +
       `• Preferred Branch: ${formData.branch === 'gokulpura' ? 'Gokulpura' : 'Kalwar Road'}\n` +
-      `• Program: ${formData.programType}\n` +
       `• Transport Needed: ${formData.transport}\n` +
+      `• Preferred Visit: ${formData.visitTime}\n` +
       `• Parent Contact: ${formData.parentName} (${formData.phone})\n\n` +
       `Please let me know the next steps for campus visit and fee details.`
     );
@@ -69,7 +69,7 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
                 Admission Inquiry {CURRENT_SESSION}
               </h3>
               <p className="text-xs text-slate-300">
-                Playgroup to Class VIII • Day Boarding & Day School
+                Playgroup to Class VIII • CBSE Curriculum Framework
               </p>
             </div>
           </div>
@@ -183,19 +183,15 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
 
                 <div>
                   <label className="block font-semibold text-slate-700 mb-1">
-                    Program Facility *
+                    Preferred Visit Slot *
                   </label>
                   <select
-                    value={formData.programType}
-                    onChange={(e) => setFormData({ ...formData, programType: e.target.value })}
+                    value={formData.visitTime}
+                    onChange={(e) => setFormData({ ...formData, visitTime: e.target.value })}
                     className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-slate-800 bg-white"
                   >
-                    <option value="Day Boarding (8 AM - 5:30 PM)">
-                      ⭐ Day Boarding (8 AM - 5:30 PM) [Meals + Homework]
-                    </option>
-                    <option value="Day School (8 AM - 1:30 PM)">
-                      Day School (8 AM - 1:30 PM)
-                    </option>
+                    <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                    <option value="Afternoon (12:00 PM - 2:30 PM)">Afternoon (12:00 PM - 2:30 PM)</option>
                   </select>
                 </div>
               </div>
@@ -268,7 +264,7 @@ export default function QuickInquiryModal({ isOpen, onClose }) {
                   rows="2"
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  placeholder="e.g. Tilak Vihar / Looking for Day Boarding homework support"
+                  placeholder="e.g. Tilak Vihar / Inquiring about bus routes and admission fee"
                   className="w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 text-slate-800"
                 ></textarea>
               </div>

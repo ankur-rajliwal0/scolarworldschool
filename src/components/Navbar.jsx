@@ -29,12 +29,6 @@ export default function Navbar({ onOpenInquiry }) {
     { label: 'About Us', path: '/about' },
     { label: 'Academics', path: '/academics' },
     { 
-      label: 'Day Boarding', 
-      path: '/day-boarding',
-      badge: 'Parent Special',
-      badgeColor: 'bg-emerald-500/20 text-emerald-300 border-emerald-400/30'
-    },
-    { 
       label: 'Admissions', 
       path: '/admissions',
       badge: CURRENT_SESSION,
@@ -51,7 +45,7 @@ export default function Navbar({ onOpenInquiry }) {
   };
 
   return (
-    <header className="w-full bg-white z-40">
+    <header className="w-full max-w-full overflow-x-clip bg-white z-40">
       
       {/* TIER 1: BRAND LOGO & ACTION BAR (SPACIOUS, NO CRAMPING) */}
       <div className="border-b border-slate-200/80 bg-white py-3 sm:py-4">
@@ -151,14 +145,14 @@ export default function Navbar({ onOpenInquiry }) {
       </div>
 
       {/* TIER 2: DEDICATED NAVIGATION BAR (FULL WIDTH, NO CRAMPING, SINGLE LINE TEXT) */}
-      <nav className={`hidden lg:block bg-navy-950 text-white transition-all duration-200 border-b border-navy-800 ${
+      <nav className={`hidden lg:block bg-navy-950 text-white transition-all duration-200 border-b border-navy-800 w-full overflow-x-clip ${
         isScrolled ? 'sticky top-0 z-50 shadow-xl' : 'relative'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-4">
             
             {/* Desktop Navigation Links (Properly Spaced, whitespace-nowrap) */}
-            <div className="flex items-center space-x-1 xl:space-x-2 py-0">
+            <div className="flex items-center space-x-1 xl:space-x-2 py-0 overflow-x-auto scrollbar-none">
               {navLinks.map((item) => {
                 const active = isActive(item.path);
                 return (
@@ -188,13 +182,13 @@ export default function Navbar({ onOpenInquiry }) {
             </div>
 
             {/* Right side of Nav Bar: Quick Action */}
-            <div className="flex items-center gap-3 py-1">
+            <div className="flex items-center gap-3 py-1 flex-shrink-0">
               <button
                 onClick={() => onOpenInquiry()}
-                className="px-3 py-1.5 text-xs font-semibold text-slate-200 hover:text-amber-300 bg-white/10 hover:bg-white/15 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap"
+                className="px-3.5 py-1.5 text-xs font-bold text-navy-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap shadow-xs cursor-pointer"
               >
-                <Clock className="w-3.5 h-3.5 text-amber-400" />
-                <span>Day Boarding (8 AM - 5:30 PM)</span>
+                <Sparkles className="w-3.5 h-3.5 text-navy-950" />
+                <span>Admission Inquiry</span>
               </button>
             </div>
 

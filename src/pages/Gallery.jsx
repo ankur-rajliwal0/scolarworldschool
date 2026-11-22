@@ -10,7 +10,7 @@ export default function Gallery({ onOpenInquiry }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeImage, setActiveImage] = useState(null);
 
-  const categories = ['All', 'Real Campus', 'Campus', 'Day Boarding', 'Facilities', 'Events', 'Pre-Primary', 'Sports'];
+  const categories = ['All', 'Real Campus', 'Campus', 'Activity Wing', 'Facilities', 'Events', 'Pre-Primary', 'Sports'];
 
   const filteredItems = selectedCategory === 'All'
     ? GALLERY_ITEMS

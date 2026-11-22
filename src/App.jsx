@@ -9,7 +9,6 @@ import FloatingActions from './components/FloatingActions';
 import Home from './pages/Home';
 import About from './pages/About';
 import Academics from './pages/Academics';
-import DayBoarding from './pages/DayBoarding';
 import Admissions from './pages/Admissions';
 import Facilities from './pages/Facilities';
 import Gallery from './pages/Gallery';
@@ -40,7 +39,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-800 antialiased selection:bg-amber-300 selection:text-navy-950">
+      <div className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-800 antialiased selection:bg-amber-300 selection:text-navy-950 w-full max-w-full overflow-x-clip">
         
         {/* Top Notification Strip */}
         <TopBanner onOpenInquiry={handleOpenInquiry} />
@@ -49,12 +48,11 @@ export default function App() {
         <Navbar onOpenInquiry={handleOpenInquiry} />
 
         {/* Dynamic Route Pages */}
-        <main className="flex-grow">
+        <main className="flex-grow w-full max-w-full overflow-x-clip">
           <Routes>
             <Route path="/" element={<Home onOpenInquiry={handleOpenInquiry} />} />
             <Route path="/about" element={<About onOpenInquiry={handleOpenInquiry} />} />
             <Route path="/academics" element={<Academics onOpenInquiry={handleOpenInquiry} />} />
-            <Route path="/day-boarding" element={<DayBoarding onOpenInquiry={handleOpenInquiry} />} />
             <Route path="/admissions" element={<Admissions onOpenInquiry={handleOpenInquiry} />} />
             <Route path="/facilities" element={<Facilities onOpenInquiry={handleOpenInquiry} />} />
             <Route path="/gallery" element={<Gallery onOpenInquiry={handleOpenInquiry} />} />

@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { 
   SCHOOL_INFO, CORE_PILLARS, ACADEMIC_PROGRAMS, 
-  DAY_BOARDING_SCHEDULE, TESTIMONIALS, FAQS, GALLERY_ITEMS, REAL_CAMPUS_ASSETS, CURRENT_SESSION 
+  DAILY_SCHOOL_SCHEDULE, TESTIMONIALS, FAQS, GALLERY_ITEMS, REAL_CAMPUS_ASSETS, CURRENT_SESSION 
 } from '../data/schoolData';
 import SectionHeader from '../components/SectionHeader';
 
@@ -54,10 +54,10 @@ export default function Home({ onOpenInquiry }) {
 
               {/* Tagline & Subtext */}
               <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                A prestigious <strong className="text-white font-semibold">Co-educational English Medium Day & Day Boarding School</strong> in Jaipur. Providing progressive CBSE education, certified caring faculty, and worry-free care for working parents.
+                A prestigious <strong className="text-white font-semibold">Co-educational English Medium Day School</strong> in Jaipur. Providing progressive CBSE education, certified caring faculty, and holistic activity-based development for every child.
               </p>
 
-              {/* Flyer Highlight Banner: Working Parents */}
+              {/* Flyer Highlight Banner: Holistic Education */}
               <div className="p-4 rounded-xl bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent border border-amber-500/30 text-left">
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 rounded-lg bg-amber-500 text-navy-950 font-black flex items-center justify-center flex-shrink-0 text-xs shadow-sm">
@@ -65,10 +65,10 @@ export default function Home({ onOpenInquiry }) {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm text-amber-300">
-                      Attention Working Parents:
+                      Nurturing Tomorrow's Leaders:
                     </h4>
                     <p className="text-xs text-slate-200 mt-0.5 leading-normal">
-                      Now, No More Worries about Your Kids! We are Providing You a Complete <strong className="text-white underline decoration-amber-400">Day Boarding Facility</strong> with hot lunch, homework completion, and sports till 5:30 PM.
+                      From Playgroup to Class VIII, our child-first curriculum combines <strong className="text-white underline decoration-amber-400">CBSE scholastic excellence</strong>, certified faculty, GPS transport, and rich activity-based learning.
                     </p>
                   </div>
                 </div>
@@ -85,11 +85,11 @@ export default function Home({ onOpenInquiry }) {
                 </button>
 
                 <Link
-                  to="/day-boarding"
+                  to="/facilities"
                   className="w-full sm:w-auto px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-sm rounded-xl border border-white/20 transition-colors flex items-center justify-center gap-2"
                 >
-                  <Clock className="w-4 h-4 text-amber-400" />
-                  <span>Day Boarding Guide</span>
+                  <Compass className="w-4 h-4 text-amber-400" />
+                  <span>Campus Facilities</span>
                 </Link>
 
                 <Link
@@ -180,8 +180,8 @@ export default function Home({ onOpenInquiry }) {
                   <div className="p-2.5 rounded-lg bg-navy-950/60 border border-white/10 flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-amber-400 flex-shrink-0" />
                     <div>
-                      <span className="font-bold text-white text-xs block leading-tight">Day Boarding</span>
-                      <span className="text-[10px] text-slate-300">Meals & HW Support</span>
+                      <span className="font-bold text-white text-xs block leading-tight">Activity Arena</span>
+                      <span className="text-[10px] text-slate-300">Sports & Creative Clubs</span>
                     </div>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function Home({ onOpenInquiry }) {
               <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-3 group-hover:bg-amber-500 group-hover:text-navy-950 transition-colors">
                 {idx === 0 && <GraduationCap className="w-5 h-5" />}
                 {idx === 1 && <BookOpen className="w-5 h-5" />}
-                {idx === 2 && <Clock className="w-5 h-5" />}
+                {idx === 2 && <Sparkles className="w-5 h-5" />}
                 {idx === 3 && <Bus className="w-5 h-5" />}
               </div>
               <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-700 mb-1">
@@ -232,7 +232,7 @@ export default function Home({ onOpenInquiry }) {
         </div>
       </section>
 
-      {/* DEDICATED WORKING PARENTS SPOTLIGHT WITH REAL ACTIVITY CORRIDOR PHOTO */}
+      {/* VIBRANT STUDENT LIFE & ACTIVITY ARENA WITH REAL ACTIVITY CORRIDOR PHOTO */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-navy-900 via-navy-950 to-navy-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-white shadow-2xl relative overflow-hidden border border-navy-800">
           
@@ -242,63 +242,63 @@ export default function Home({ onOpenInquiry }) {
             
             <div className="lg:col-span-7 space-y-4">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400 text-navy-950">
-                Special Care Program
+                Holistic Development
               </span>
               <h2 className="font-heading font-extrabold text-2xl sm:text-4xl text-white tracking-tight">
-                "Attention Working Parents: Now, No More Worries About Your Kids!"
+                "A Joyful School Day Where Learning Meets Active Discovery"
               </h2>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Balancing professional commitments while ensuring your child finishes schoolwork, eats wholesome meals, and stays away from screen addiction is tough. Our comprehensive <strong className="text-amber-300">Day Boarding Program</strong> transforms your child's afternoons into structured joy.
+                At Scholars World School, every hour on campus is purposeful and engaging. Through vibrant activity spaces, modern smart classrooms, and dedicated sports coaching, children flourish intellectually, emotionally, and physically.
               </p>
 
-              {/* 4 Pillars of Day Boarding */}
+              {/* 4 Pillars of Campus Experience */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
                 <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
-                  <Utensils className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <Sparkles className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-bold text-sm text-white">Wholesome Hot Lunch</h3>
-                    <p className="text-xs text-slate-300 mt-0.5">Nutritious, hygienic vegetarian meals & evening snacks prepared fresh daily.</p>
+                    <h3 className="font-bold text-sm text-white">Smart & Experiential Classrooms</h3>
+                    <p className="text-xs text-slate-300 mt-0.5">Audiovisual modules, digital boards, and hands-on discovery kits for deep conceptual learning.</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
                   <BookOpen className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-bold text-sm text-white">Supervised Homework</h3>
-                    <p className="text-xs text-slate-300 mt-0.5">All school assignments completed with teacher guidance. Zero study tears at home!</p>
+                    <h3 className="font-bold text-sm text-white">CBSE Curriculum & Guidance</h3>
+                    <p className="text-xs text-slate-300 mt-0.5">Empathetic certified teachers who ensure concept clarity and joyful learning every day.</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
                   <Award className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-bold text-sm text-white">Sports & Stage Hobbies</h3>
-                    <p className="text-xs text-slate-300 mt-0.5">Martial arts, skating, dance, music, robotics and outdoor games.</p>
+                    <h3 className="font-bold text-sm text-white">Sports & Creative Clubs</h3>
+                    <p className="text-xs text-slate-300 mt-0.5">Skating, martial arts, dance, vocal music, yoga, and public speaking in covered arenas.</p>
                   </div>
                 </div>
 
                 <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
                   <Bus className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="font-bold text-sm text-white">Safe 5:30 PM Dispersal</h3>
-                    <p className="text-xs text-slate-300 mt-0.5">Convenient pickup or doorstep drop via GPS-tracked school buses.</p>
+                    <h3 className="font-bold text-sm text-white">Safe GPS School Transport</h3>
+                    <p className="text-xs text-slate-300 mt-0.5">Doorstep pickup and drop with speed governors, CCTV, and verified female attendants.</p>
                   </div>
                 </div>
               </div>
 
               <div className="pt-3 flex flex-wrap items-center gap-4">
                 <Link
-                  to="/day-boarding"
+                  to="/facilities"
                   className="px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-navy-950 font-bold text-xs rounded-xl shadow-md transition-colors flex items-center gap-1.5"
                 >
-                  <span>Explore Daily Timetable & Menu</span>
+                  <span>Explore Campus Facilities & Arenas</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <button
                   onClick={() => onOpenInquiry()}
                   className="px-4 py-2.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-xs rounded-xl border border-white/20 transition-colors"
                 >
-                  Inquire Day Boarding Seats
+                  Schedule Campus Visit
                 </button>
               </div>
 
@@ -309,13 +309,13 @@ export default function Home({ onOpenInquiry }) {
               <div className="relative rounded-2xl overflow-hidden border border-white/20 shadow-xl aspect-16/10 group">
                 <img
                   src={REAL_CAMPUS_ASSETS.activityCorridor.src}
-                  alt="Scholars World School Covered Activity & Day-Boarding Area"
+                  alt="Scholars World School Covered Activity & Play Area"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 text-left">
                   <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-400 text-navy-950">
-                    Day Boarding Arena
+                    Student Activity Arena
                   </span>
                   <p className="text-xs font-bold text-white mt-1">
                     Spacious Covered Play Area With Colorful Murals
@@ -328,22 +328,22 @@ export default function Home({ onOpenInquiry }) {
                 <div className="flex items-center justify-between border-b border-white/10 pb-2">
                   <span className="font-bold text-amber-300 flex items-center gap-1.5">
                     <Clock className="w-3.5 h-3.5 text-amber-400" />
-                    Afternoon Routine (1:30 PM – 5:30 PM)
+                    Daily School Schedule (8:00 AM – 1:30 PM)
                   </span>
                   <span className="text-[10px] text-slate-300">Mon – Sat</span>
                 </div>
                 <div className="space-y-1.5 text-[11px] text-slate-300">
                   <div className="flex justify-between">
-                    <span className="font-mono text-amber-400">1:30 PM</span>
-                    <span>Fresh Wash-up & Warm Vegetarian Lunch</span>
+                    <span className="font-mono text-amber-400">08:00 AM</span>
+                    <span>Morning Assembly, Prayer & Daily Thought</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="font-mono text-amber-400">2:30 PM</span>
-                    <span>Supervised Homework Completion</span>
+                    <span className="font-mono text-amber-400">10:30 AM</span>
+                    <span>Nutritious Snack & Hydration Break</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="font-mono text-amber-400">4:20 PM</span>
-                    <span>Sports, Skating & Hobby Clubs</span>
+                    <span className="font-mono text-amber-400">12:30 PM</span>
+                    <span>Sports, Skating & Creative Activity Clubs</span>
                   </div>
                 </div>
               </div>
@@ -529,7 +529,7 @@ export default function Home({ onOpenInquiry }) {
           <SectionHeader
             badge="Two Strategic Campuses in Jaipur"
             title="Convenient Learning Centers Across Jaipur"
-            subtitle="Both branches feature safe, technologically equipped classrooms, dedicated day boarding spaces, and comprehensive bus routes."
+            subtitle="Both branches feature safe, technologically equipped classrooms, dedicated student activity spaces, and comprehensive bus routes."
           />
 
           {/* Branch Switcher Tabs */}
@@ -663,7 +663,7 @@ export default function Home({ onOpenInquiry }) {
           <SectionHeader
             badge="Parent Testimonials"
             title="Trusted by Hundreds of Jaipur Families"
-            subtitle="Hear real experiences from parents of our Gokulpura and Kalwar Road campuses regarding academics, faculty care, and day boarding."
+            subtitle="Hear real experiences from parents of our Gokulpura and Kalwar Road campuses regarding academics, faculty care, and campus environment."
             dark={true}
           />
 
@@ -708,7 +708,7 @@ export default function Home({ onOpenInquiry }) {
         <SectionHeader
           badge="Parent Questions Answered"
           title="Frequently Asked Questions"
-          subtitle={`Everything you need to know about Session ${CURRENT_SESSION} admissions, day boarding, transport, and curriculum.`}
+          subtitle={`Everything you need to know about Session ${CURRENT_SESSION} admissions, school hours, transport, and curriculum.`}
         />
 
         <div className="space-y-3">
@@ -747,7 +747,7 @@ export default function Home({ onOpenInquiry }) {
             Have a specific question about your child's grade?
           </h4>
           <p className="text-xs text-slate-600 mt-1">
-            Our admissions counselors are happy to walk you through fee structures, bus routes, and day boarding slots.
+            Our admissions counselors are happy to walk you through fee structures, bus routes, and grade eligibility.
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
             <a

@@ -33,14 +33,14 @@ export default function Facilities({ onOpenInquiry }) {
     },
     {
       icon: Utensils,
-      title: 'Day Boarding Dining & Activity Arena',
-      badge: 'Parent Special',
-      summary: 'A spotless dining and indoor recreation arena where day boarders enjoy hot vegetarian meals and engage in supervised creative hobbies.',
+      title: 'Indoor Recreation & Student Activity Arena',
+      badge: 'Activity Arena',
+      summary: 'A spotless indoor recreation and creative arena where students engage in supervised co-curricular hobbies, chess, and celebrations.',
       features: [
         'Covered activity area with colorful cartoon murals',
-        'Dietitian-approved weekly nutrition menu',
-        'Table manners and community dining values taught gently',
-        'Zero junk food policy; pure nutritious ingredients'
+        'Dedicated yoga, chess, and table tennis stations',
+        'Creative arts, crafts, and storytelling corners',
+        'Safe, monitored indoor environment for all age groups'
       ]
     },
     {
@@ -232,7 +232,7 @@ export default function Facilities({ onOpenInquiry }) {
                 Admission Circular (Session {CURRENT_SESSION})
               </h3>
               <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
-                The official prospectus detailing Day Boarding schedules, Gokulpura & Kalwar branches, and annual stage functions.
+                The official prospectus detailing school schedules, Gokulpura & Kalwar branches, and annual stage functions.
               </p>
             </div>
           </div>

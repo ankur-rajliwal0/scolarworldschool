@@ -21,7 +21,7 @@ export default function About({ onOpenInquiry }) {
               Shaping Young Minds With Warmth, Discipline & Values
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Founded on the conviction that early childhood and primary schooling form the cornerstone of lifelong success, Scholars World School is Jaipur's distinguished Co-educational English Medium institution offering modern CBSE-aligned education alongside a supportive Day Boarding ecosystem.
+              Founded on the conviction that early childhood and primary schooling form the cornerstone of lifelong success, Scholars World School is Jaipur's distinguished Co-educational English Medium institution offering modern CBSE-aligned education alongside a supportive and nurturing school ecosystem.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function About({ onOpenInquiry }) {
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                <span>Comprehensive Day Boarding to alleviate parental stress</span>
+                <span>Activity-based smart learning to inspire lifelong curiosity</span>
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
@@ -129,7 +129,7 @@ export default function About({ onOpenInquiry }) {
                 "At Scholars World School, we do not believe in mass-producing test scores. We cultivate real thinkers, articulate speakers, and kind human beings. Whether your child starts with us in Playgroup or joins us in Middle School, they receive our undivided attention, warmth, and high pedagogical standards."
               </p>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                "Our Day Boarding initiative is designed specifically for today's dynamic families. By completing homework, having hot healthy meals, and participating in sports right under our roof, children can go home to their parents and enjoy meaningful bonding rather than battles over textbooks."
+                "Our educational initiative is designed specifically for today's dynamic learners. By blending conceptual clarity, creative arts, and active sports right on campus, children develop confidence, strong character, and a lifelong love for learning."
               </p>
               <div className="pt-2">
                 <button
@@ -203,7 +203,7 @@ export default function About({ onOpenInquiry }) {
                 Sheltered Activity Wing
               </h3>
               <p className="text-xs text-slate-500 mt-1">
-                Spacious indoor arena with cartoon murals and seating for day-boarding activities, chess, and clubs.
+                Spacious indoor arena with cartoon murals and seating for student activities, chess, and clubs.
               </p>
             </div>
           </div>

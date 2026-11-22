@@ -16,7 +16,7 @@ export const SCHOOL_INFO = {
   sanskritMotto: "विद्याधनं सर्वधनप्रधानम्",
   logo: "/images/school-logo.png",
   affiliation: "Co-educational English Medium School • CBSE Curriculum Framework",
-  type: "Day School & Day Boarding",
+  type: "Co-educational Day School",
   currentSession: CURRENT_SESSION,
   classesOffered: "Playgroup (PG) to Class VIII",
   expansionNote: "Upgrading to Class 10th Soon!",
@@ -36,14 +36,14 @@ export const SCHOOL_INFO = {
       isMain: true,
       address: "42, 12-B, Tilak Vihar, Gokulpura, Jaipur, Rajasthan - 302012",
       landmark: "Near Tilak Vihar Main Circle",
-      timings: "Day School: 8:00 AM - 1:30 PM | Day Boarding: 8:00 AM - 5:30 PM",
+      timings: "Monday to Saturday: 8:00 AM - 1:30 PM",
       phone: "+91 90244 67525",
       email: "gokulpura@scholarsworldschool.in",
       image: "/images/building-facade.jpg",
       mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.7!2d75.72!3d26.96!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU3JzM2LjAiTiA3NcKwNDMnMTIuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin",
       features: [
         "Playgroup to Class VIII Wing",
-        "Modern Day-Boarding Facility with Activity Arena",
+        "Modern Smart Classrooms & Holistic Activity Arena",
         "Activity & Creative Arts Studio",
         "Transport Fleet Coverage Across West Jaipur"
       ]
@@ -54,7 +54,7 @@ export const SCHOOL_INFO = {
       isMain: false,
       address: "85-86 A, Sunder Vihar, Takiya Ki Chawki, Kalwar Road, Jaipur, Rajasthan",
       landmark: "Takiya Ki Chawki, Kalwar Road",
-      timings: "Day School: 8:00 AM - 1:30 PM | Day Boarding: 8:00 AM - 5:30 PM",
+      timings: "Monday to Saturday: 8:00 AM - 1:30 PM",
       phone: "+91 97994 91151",
       email: "kalwar@scholarsworldschool.in",
       image: "/images/campus-walkway.jpg",
@@ -92,8 +92,8 @@ export const REAL_CAMPUS_ASSETS = {
   },
   activityCorridor: {
     src: "/images/activity-corridor.jpg",
-    title: "Covered Day-Boarding & Activity Arena",
-    desc: "Spacious activity wing with Winnie-the-Pooh murals, yellow garden fencing, and safe indoor play zones."
+    title: "Covered Play & Student Activity Arena",
+    desc: "Spacious activity wing with Winnie-the-Pooh murals, yellow garden fencing, and safe indoor recreation zones."
   },
   waterFacility: {
     src: "/images/water-facility.jpg",
@@ -103,7 +103,7 @@ export const REAL_CAMPUS_ASSETS = {
   brochure: {
     src: "/images/school-brochure.jpg",
     title: `Official School Admission Brochure (Session ${CURRENT_SESSION})`,
-    desc: "Authentic circular outlining Day Boarding, PG to Class VIII admissions, contact hotlines, and cultural celebrations."
+    desc: "Authentic circular outlining PG to Class VIII admissions, contact hotlines, campus facilities, and cultural celebrations."
   }
 };
 
@@ -121,10 +121,10 @@ export const CORE_PILLARS = [
     highlight: "NEP 2020 Aligned"
   },
   {
-    title: "Day Boarding for Working Parents",
-    description: "Complete peace of mind for dual-career parents: wholesome meals, supervised homework completion, sports and hobby clubs.",
-    icon: "Clock",
-    highlight: "Till 5:30 PM With Meals"
+    title: "Activity-Based Smart Learning",
+    description: "Interactive smart classrooms, discovery-driven curriculum, audiovisual modules, and creative activity arenas for well-rounded growth.",
+    icon: "Sparkles",
+    highlight: "Smart & Experiential"
   },
   {
     title: "Safe Transport Facility",
@@ -202,13 +202,13 @@ export const ACADEMIC_PROGRAMS = [
   }
 ];
 
-export const DAY_BOARDING_SCHEDULE = [
-  { time: "01:30 PM - 02:00 PM", activity: "Fresh Wash-Up & Warm Nutritious Lunch", desc: "Wholesome, home-style vegetarian meal prepared under strict hygienic supervision." },
-  { time: "02:00 PM - 02:30 PM", activity: "Mindfulness & Relaxation Break", desc: "Quiet time, light reading, storytelling, or power nap for younger scholars." },
-  { time: "02:30 PM - 04:00 PM", activity: "Supervised Homework & Academic Doubts", desc: "Experienced teachers guide homework completion so evenings at home are 100% stress-free." },
-  { time: "04:00 PM - 04:20 PM", activity: "Evening Milk / Juice & Nutritious Snacks", desc: "Fresh fruits, healthy biscuits, sprouts, or energy snack with clean RO water." },
-  { time: "04:20 PM - 05:15 PM", activity: "Sports, Performing Arts & Creative Clubs", desc: "Indoor arena activities, skating, dance, music, robotics, chess, and outdoor recreation." },
-  { time: "05:15 PM - 05:30 PM", activity: "Pack Up & Safe Dispersal / Bus Departure", desc: "Students board their GPS buses or are handed over to authorized parents." }
+export const DAILY_SCHOOL_SCHEDULE = [
+  { time: "07:50 AM - 08:15 AM", activity: "Campus Arrival & Morning Assembly", desc: "Prayer, national anthem, news headlines, inspirational thought, and positive affirmations." },
+  { time: "08:15 AM - 10:30 AM", activity: "Foundational & Core Academic Periods", desc: "Interactive Mathematics, Language Arts, and Science sessions in smart-equipped classrooms." },
+  { time: "10:30 AM - 10:55 AM", activity: "Nutritious Snack & Fruit Break", desc: "Supervised social dining, hand-wash hygiene, and clean RO purified hydration." },
+  { time: "10:55 AM - 12:30 PM", activity: "Hands-on Lab Exploration & Creative Projects", desc: "Computer lab, phonics, Hindi, Environmental Studies, and library storytelling." },
+  { time: "12:30 PM - 01:20 PM", activity: "Physical Education, Yoga & Sports Drills", desc: "Indoor recreation arena, skating, karate, outdoor fitness, and group sports." },
+  { time: "01:20 PM - 01:30 PM", activity: "Pack Up, Reflection & Organized Dispersal", desc: "Teacher guidance, bus boarding with verified escorts, and authorized parent pickups." }
 ];
 
 export const TESTIMONIALS = [
@@ -216,7 +216,7 @@ export const TESTIMONIALS = [
     name: "Dr. Sunita Sharma & Rajesh Sharma",
     relation: "Parents of Ananya (Class IV) & Aarav (Class I)",
     branch: "Gokulpura Branch",
-    quote: "Both my husband and I are working professionals in medical and banking sectors. The Day Boarding facility at Scholars World School has been a lifesaver. When our children return home at 5:30 PM, their homework is already completed with teacher guidance, they have had healthy meals, and we get to enjoy joyful family time without tears over study books!"
+    quote: "Both my husband and I appreciate the exceptional academic atmosphere and certified teachers at Scholars World School. The individual attention given to Ananya and Aarav, combined with creative activity sessions, has boosted their confidence. We love how eager they are to head to school each morning!"
   },
   {
     name: "Vikram Singh Rathore",
@@ -234,16 +234,16 @@ export const TESTIMONIALS = [
 
 export const FAQS = [
   {
-    q: "What are the school operating hours for Day Scholars vs Day Boarding?",
-    a: "Standard Day School runs from 8:00 AM to 1:30 PM. The Day Boarding program extends till 5:30 PM, which includes hot fresh lunch, supervised homework completion, evening snacks, and structured sports/extracurricular activities."
+    q: "What are the school operating hours and timings?",
+    a: "Standard school hours run from 8:00 AM to 1:30 PM (Monday to Saturday). Kindergarten timings are structured with special care, and campus administrative offices remain open till 3:00 PM for parent visits and admissions."
   },
   {
     q: "Which curriculum is followed at Scholars World School?",
     a: "We strictly follow the Central Board of Secondary Education (CBSE) curriculum framework, enriched with activity-based learning and experiential projects aligned with NEP 2020 guidelines."
   },
   {
-    q: "How does the Day Boarding benefit working parents?",
-    a: "Working parents no longer need to worry about after-school baby sitters, private tuition, or meal management. Children finish all homework under qualified subject teachers, receive healthy meals, learn sports/dance, and return home relaxed."
+    q: "What co-curricular and sports facilities are provided?",
+    a: "Students participate in structured physical education, yoga, karate, roller skating, badminton, art & craft, music, and public speaking in our dedicated indoor activity arena and open campus grounds."
   },
   {
     q: "What transport routes are available across Jaipur?",
@@ -278,9 +278,9 @@ export const GALLERY_ITEMS = [
   },
   {
     id: 3,
-    title: "Covered Day-Boarding & Activity Arena",
-    category: "Day Boarding",
-    caption: "Spacious, shaded indoor play and activity area decorated with inspiring cartoon murals where students engage in creative clubs.",
+    title: "Covered Student Recreation & Activity Arena",
+    category: "Campus",
+    caption: "Spacious, shaded indoor play and activity area decorated with inspiring cartoon murals where students engage in creative clubs and indoor sports.",
     image: "/images/activity-corridor.jpg",
     isReal: true
   },
@@ -304,7 +304,7 @@ export const GALLERY_ITEMS = [
     id: 6,
     title: `Official School Admission Information Brochure`,
     category: "Events",
-    caption: `The official school circular featuring Day Boarding details, PG to Class VIII admissions, and student stage celebrations.`,
+    caption: `The official school circular featuring PG to Class VIII admissions, school facilities, and student stage celebrations.`,
     image: "/images/school-brochure.jpg",
     isReal: true
   },

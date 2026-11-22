@@ -13,7 +13,7 @@ export default function Admissions({ onOpenInquiry }) {
     gender: 'Male',
     grade: 'Playgroup (PG)',
     branch: 'gokulpura',
-    program: 'Day Boarding (8 AM - 5:30 PM)',
+    program: 'Regular Day School (8:00 AM - 1:30 PM)',
     transport: 'Yes',
     fatherName: '',
     motherName: '',
@@ -39,7 +39,7 @@ export default function Admissions({ onOpenInquiry }) {
     { num: '01', title: 'Submit Inquiry / Visit Campus', desc: 'Fill out our online inquiry form or walk into our Gokulpura or Kalwar Road campus to collect the prospectus.' },
     { num: '02', title: 'Informal Interaction', desc: 'A friendly, stress-free interaction with the child and parents to understand the child’s learning style and interests.' },
     { num: '03', title: 'Document Verification', desc: 'Submission of birth certificate, previous school transfer certificate (TC), immunization record, and address proof.' },
-    { num: '04', title: 'Provisional Seat Confirmation', desc: 'Confirmation of admission in Day School or Day Boarding and allotment of student registration ID.' },
+    { num: '04', title: 'Provisional Seat Confirmation', desc: 'Confirmation of admission in Day School and allotment of student registration ID.' },
     { num: '05', title: 'Orientation & Welcome', desc: 'Orientation session for parents, distribution of curriculum kit, books, uniform measurements, and bus route confirmation.' }
   ];
 
@@ -81,7 +81,7 @@ export default function Admissions({ onOpenInquiry }) {
               Admissions Open for Playgroup to Class VIII
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Begin your child's educational journey with Scholars World School. Offering holistic CBSE education, certified educators, day boarding for working parents, and door-to-door GPS transport in Jaipur.
+              Begin your child's educational journey with Scholars World School. Offering holistic CBSE education, certified educators, activity-based learning, and door-to-door GPS transport in Jaipur.
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function Admissions({ onOpenInquiry }) {
               Scholars World School Admission Information Flyer
             </h4>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Verify all official branch details, Day Boarding timings, contact numbers, and student stage performance highlights from our official brochure.
+              Verify all official branch details, school timings, contact numbers, and student stage performance highlights from our official brochure.
             </p>
           </div>
           <div className="flex-shrink-0">
@@ -348,18 +348,15 @@ export default function Admissions({ onOpenInquiry }) {
 
                   <div>
                     <label className="block font-semibold text-slate-700 mb-1">
-                      Day Boarding or Day School? *
+                      School Timings *
                     </label>
                     <select
                       value={formData.program}
                       onChange={(e) => setFormData({ ...formData, program: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50 bg-white font-semibold text-navy-950"
                     >
-                      <option value="Day Boarding (8 AM - 5:30 PM)">
-                        ⭐ Day Boarding (8 AM - 5:30 PM) [Meals + HW]
-                      </option>
-                      <option value="Day School (8 AM - 1:30 PM)">
-                        Day School (8 AM - 1:30 PM)
+                      <option value="Regular Day School (8:00 AM - 1:30 PM)">
+                        Regular Day School (8:00 AM - 1:30 PM)
                       </option>
                     </select>
                   </div>

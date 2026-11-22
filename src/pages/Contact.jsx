@@ -58,7 +58,7 @@ export default function Contact({ onOpenInquiry }) {
         <SectionHeader
           badge="Two Convenient Campuses"
           title="Campuses & Office Addresses"
-          subtitle="Both campuses operate full academic wings and day boarding facilities with dedicated administrative desks."
+          subtitle="Both campuses operate full academic wings and student activity facilities with dedicated administrative desks."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -172,7 +172,7 @@ export default function Contact({ onOpenInquiry }) {
                 Always Here to Assist Parents
               </h3>
               <p className="text-xs text-slate-300 mt-2 leading-relaxed">
-                Feel free to call our admissions coordinator for fee inquiries, bus route confirmations, or day boarding schedules.
+                Feel free to call our admissions coordinator for fee inquiries, bus route confirmations, or campus visit schedules.
               </p>
             </div>
 
@@ -334,7 +334,7 @@ export default function Contact({ onOpenInquiry }) {
                     required
                     value={msgData.message}
                     onChange={(e) => setMsgData({ ...msgData, message: e.target.value })}
-                    placeholder={`Ask about admissions for Session ${CURRENT_SESSION}, day boarding timings, bus transport fees, or school visit timings...`}
+                    placeholder={`Ask about admissions for Session ${CURRENT_SESSION}, school timings, bus transport fees, or school visit timings...`}
                     className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500/50"
                   />
                 </div>
