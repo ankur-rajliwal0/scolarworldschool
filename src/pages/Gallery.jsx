@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { 
-  Sparkles, Filter, Eye, X, Image as ImageIcon, 
+  Filter, Eye, X, Image as ImageIcon, 
   ArrowRight, Heart, Share2, Award, Download, CheckCircle2 
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { 
-  Sparkles, CheckCircle2, FileText, Calendar, 
+  CheckCircle2, FileText, Calendar, 
   HelpCircle, Send, Phone, MessageSquare, ShieldCheck, ArrowRight 
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';

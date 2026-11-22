@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { 
   MapPin, Phone, Mail, Clock, Send, CheckCircle2, 
-  MessageSquare, Compass, ShieldCheck, Sparkles 
+  MessageSquare, Compass, ShieldCheck 
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import { SCHOOL_INFO, CURRENT_SESSION } from '../data/schoolData';

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { 
   MapPin, Phone, Mail, Clock, ShieldCheck, 
-  ExternalLink, ArrowRight, Heart, Sparkles 
+  ExternalLink, ArrowRight, Heart, Laptop 
 } from 'lucide-react';
 import { SCHOOL_INFO, CURRENT_SESSION } from '../data/schoolData';
 
@@ -80,7 +80,7 @@ export default function Footer({ onOpenInquiry }) {
                 <span>CBSE Curriculum Framework & NEP 2020 Aligned</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
-                <Sparkles className="w-4 h-4 text-amber-400 flex-shrink-0" />
+                <Laptop className="w-4 h-4 text-amber-400 flex-shrink-0" />
                 <span>Smart Classrooms & Holistic Activity Arena</span>
               </div>
             </div>

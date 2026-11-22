@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Sparkles, X } from 'lucide-react';
+import { Phone, Mail, MapPin, X } from 'lucide-react';
 import { SCHOOL_INFO, CURRENT_SESSION } from '../data/schoolData';
 
 export default function TopBanner({ onOpenInquiry }) {
@@ -14,8 +14,7 @@ export default function TopBanner({ onOpenInquiry }) {
           
           {/* Left: Admission Flash */}
           <div className="flex items-center gap-2">
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
-              <Sparkles className="w-3 h-3 text-amber-400 animate-pulse" />
+            <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
               Admissions Open {CURRENT_SESSION}
             </span>
             <span className="hidden md:inline text-slate-300">

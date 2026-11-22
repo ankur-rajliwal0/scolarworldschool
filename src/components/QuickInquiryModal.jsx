@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, CheckCircle, Send, Phone, MessageSquare, Sparkles } from 'lucide-react';
+import { X, CheckCircle, Send, Phone, MessageSquare } from 'lucide-react';
 import { SCHOOL_INFO, CURRENT_SESSION } from '../data/schoolData';
 
 export default function QuickInquiryModal({ isOpen, onClose }) {

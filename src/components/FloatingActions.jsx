@@ -44,10 +44,9 @@ export default function FloatingActions({ onOpenInquiry }) {
         className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-navy-950 text-white shadow-xl hover:bg-navy-900 border border-navy-800 transition-all hover:scale-105 group"
         title="Call Helpline"
       >
-        <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
         <Phone className="w-4 h-4 text-amber-400" />
         <span className="hidden sm:inline text-xs font-semibold">
-          90244 67525
+          {SCHOOL_INFO.phones[0].display}
         </span>
       </a>
 

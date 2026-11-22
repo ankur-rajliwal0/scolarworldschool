@@ -1,6 +1,6 @@
 import { 
   Bus, ShieldCheck, Laptop, BookOpen, Utensils, 
-  Sparkles, CheckCircle2, Award, HeartHandshake, Eye, ArrowRight 
+  CheckCircle2, Award, HeartHandshake, Eye, ArrowRight 
 } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import { SCHOOL_INFO, REAL_CAMPUS_ASSETS, CURRENT_SESSION } from '../data/schoolData';

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Sparkles, ArrowRight, CheckCircle2, Shield, Award, 
+  ArrowRight, CheckCircle2, Shield, Award, 
   Clock, Bus, GraduationCap, BookOpen, Users, MapPin, 
   Phone, Star, ChevronRight, HeartHandshake, Utensils, 
-  HelpCircle, Compass, Play, Calendar, Download, Eye
+  HelpCircle, Compass, Play, Calendar, Download, Eye, Laptop
 } from 'lucide-react';
 import { 
   SCHOOL_INFO, CORE_PILLARS, ACADEMIC_PROGRAMS, 
@@ -35,8 +35,7 @@ export default function Home({ onOpenInquiry }) {
               
               {/* Badges */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-xs">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 shadow-xs">
                   School Admission {CURRENT_SESSION} Open
                 </span>
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-slate-200 border border-white/15">
@@ -215,7 +214,7 @@ export default function Home({ onOpenInquiry }) {
               <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center mb-3 group-hover:bg-amber-500 group-hover:text-navy-950 transition-colors">
                 {idx === 0 && <GraduationCap className="w-5 h-5" />}
                 {idx === 1 && <BookOpen className="w-5 h-5" />}
-                {idx === 2 && <Sparkles className="w-5 h-5" />}
+                {idx === 2 && <Laptop className="w-5 h-5" />}
                 {idx === 3 && <Bus className="w-5 h-5" />}
               </div>
               <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-amber-700 mb-1">
@@ -254,7 +253,7 @@ export default function Home({ onOpenInquiry }) {
               {/* 4 Pillars of Campus Experience */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
                 <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
-                  <Sparkles className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
+                  <Laptop className="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-bold text-sm text-white">Smart & Experiential Classrooms</h3>
                     <p className="text-xs text-slate-300 mt-0.5">Audiovisual modules, digital boards, and hands-on discovery kits for deep conceptual learning.</p>

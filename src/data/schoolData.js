@@ -123,7 +123,7 @@ export const CORE_PILLARS = [
   {
     title: "Activity-Based Smart Learning",
     description: "Interactive smart classrooms, discovery-driven curriculum, audiovisual modules, and creative activity arenas for well-rounded growth.",
-    icon: "Sparkles",
+    icon: "Laptop",
     highlight: "Smart & Experiential"
   },
   {
